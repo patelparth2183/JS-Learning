@@ -8,7 +8,7 @@ console.log(typeof(fruits));
 
 let b = 20;
 
-//*****Arithmatic Operators
+//***************Arithmatic Operators***************
 let add = a + b;
 let sub = b - a;
 let mul = a * b;
@@ -34,7 +34,10 @@ console.log("Pre decrement is", --b); //+12
 console.log(b);
 
 
-//*****Assignment Operators
+console.log("***** Break *****");
+
+
+//***************Assignment Operators***************
 let c = 10;
 let d = 20;
 
@@ -56,12 +59,3 @@ let number = 27;
 let string = " is my age";
 let statement = number + string;
 console.log(statement);
-
-
-//*****Comparison Operators
-let age = 18;
-
-console.log("Person is Adult:", age > 18);
-console.log("Person is not Adult:", age < 18);
-console.log("Person is Adult or not:", age >= 18);
-console.log("Person is not Adult or not:", age <= 18);
