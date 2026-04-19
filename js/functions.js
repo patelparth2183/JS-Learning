@@ -15,3 +15,10 @@ console.log(b);
 
 let c = sum(635, 674);
 console.log(c);
+
+let sub = (num1, num2) => {
+    return num1 - num2;
+}
+
+let d = sub(20, 10);
+console.log(d);

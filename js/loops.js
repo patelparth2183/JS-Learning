@@ -33,3 +33,13 @@ do {
     c++;
 }
 while(c <= 15);
+
+for (let d = 0; d <= 10; d += 2) {
+    console.log(d);
+}
+
+let d = 0;
+while (d <= 10) {
+    console.log(d);
+    d += 2;
+}
