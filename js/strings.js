@@ -37,3 +37,26 @@ console.log(fullName);
 
 // To repeat
 console.log(fullName.repeat(2));
+
+// To extract
+let text = "Hello Parth !!"
+
+console.log(text.length);
+
+console.log(text.charAt(3)); // l
+console.log(text.charCodeAt(4)); // 111 ASCII code A - Z = 65 - ..
+console.log(text.at(-4)); // h
+console.log(text[4]); // o
+
+// To slice
+console.log(text.slice(2)); // llo Parth !!
+console.log(text.slice(3, 7)); // lo P
+console.log(text.slice(-6)); // rth !!
+
+// To substring
+console.log(text.substring(2)); // llo Parth !!
+console.log(text.substring(3, 7)); // lo P
+console.log(text.substring(-6)); // Hello Parth !!
+
+// To substrate
+console.log(text.substr(3, 5)); // lo Pa
