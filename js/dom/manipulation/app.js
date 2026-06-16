@@ -39,3 +39,41 @@ function rolling(image) {
 }
 
 rolling(imgsrc)
+
+
+function createPara() {
+    const createP = document.querySelector("#events");
+    const para = document.createElement('p');
+    para.innerHTML = "This is created by Button"
+    createP.appendChild(para);
+}
+
+function changeBg() {
+    const changeBg = document.querySelector('.btn-hover');
+    changeBg.style.backgroundColor = "black";
+}
+
+function bgNormal() {
+    const changeBg = document.querySelector('.btn-hover');
+    changeBg.style.backgroundColor = "red";
+}
+
+document.querySelector("input").onchange = changeUppercase;
+
+function changeUppercase() {
+    const input2 = document.querySelector("input");
+    input2.value = input2.value.toUpperCase();
+}
+
+document.querySelector("#event-listener button").addEventListener("click", function() {
+    document.querySelector("#event-listener .para").innerHTML = "The text is changed with event listener.";
+})
+
+document.querySelector("#event-listener .para").addEventListener("mouseover", changeMouseover);
+function changeMouseover() {
+    document.querySelector("#event-listener .para").innerHTML = "On mouse over text";
+}
+
+document.querySelector("#event-listener .reset").addEventListener("click", function() {
+    document.querySelector("#event-listener .para").removeEventListener("mouseover", changeMouseover);
+})
